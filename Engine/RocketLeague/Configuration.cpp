@@ -26,8 +26,8 @@ namespace Configuration
     const int32_t StructSpacer =                50;
     const int32_t FunctionSpacer =              50;
     const int32_t ClassSpacer =                 50;
-    const int32_t GameAlignment =               static_cast<int32_t>(EAlignment::NONE);   // Used to calculate property sizes and missed offsets.
-    const int32_t FinalAlignment =              0x1;			                          // Forced alignment used in the final sdk, "UsingEnumClasses" is dependent on this value!
+    const int32_t GameAlignment =               static_cast<int32_t>(EAlignment::X64BIT);   // Used to calculate property sizes and missed offsets.
+    const int32_t FinalAlignment =              0x8;			                          // Forced alignment used in the final sdk, "UsingEnumClasses" is dependent on this value!
 
     const int32_t ProcessEventIndex =           67;				                          // Position where the Process Event function is in "UObject"'s VfTable.
     const std::string ProcessEventString =      "";
@@ -47,7 +47,7 @@ namespace Configuration
     const std::string GameName =                "RocketLeague";
     const std::string GameNameShort =           "RLSDK";
     const std::string GameVersion =             "1.0.10897.0";
-    const std::filesystem::path Directory =     "C:\\RLSDK\\";
+    const std::filesystem::path Directory =     "C:\\RLSDK\\"; // Change to your RLSDK location, could be anywhere that exists
 }
 
 /*
