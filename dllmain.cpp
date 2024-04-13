@@ -2746,8 +2746,7 @@ namespace Generator
         {
             if (Initialize(true))
             {
-                Utils::Messagebox("SDK generation has started, do not close the game until prompted to do so! You're really FAT", (MB_OK | MB_ICONINFORMATION)
-                    );
+                Utils::Messagebox("SDK generation has started, do not close the game until prompted to do so!\n\nxD", (MB_OK | MB_ICONINFORMATION));
                 std::chrono::time_point startTime = std::chrono::system_clock::now();
 
                 ProcessPackages(headerDirectory);
