@@ -37,16 +37,16 @@ namespace Configuration
     const std::string GObjectsString =          "";
     const uint8_t* GObjectsPattern =            (uint8_t*)"";
     const char* GObjectsMask =                  (char*)"";
-    const uintptr_t GObjectsOffset =            0x2429278;
+    const uintptr_t GObjectsOffset =            0x2429278; // Replace this with the current global objects offset. it goes like this: 0xGOBJECTSOFFSET
 
     const std::string GNamesString =            "";
     const uint8_t* GNamesPattern =              (uint8_t*)"";
     const char* GNamesMask =                    (char*)"";
-    const uintptr_t GNamesOffset =              0x2429230;
+    const uintptr_t GNamesOffset =              0x2429230; // Replace this with the current global objects offset. it goes like this: 0xGNAMEOFFSET
 
     const std::string GameName =                "RocketLeague";
     const std::string GameNameShort =           "RLSDK";
-    const std::string GameVersion =             "1.0.10897.0";
+    const std::string GameVersion =             "6.9.6.9";
     const std::filesystem::path Directory =     "C:\\RLSDK\\"; // Change to your RLSDK location, could be anywhere that exists
 }
 
